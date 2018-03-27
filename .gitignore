@@ -16,3 +16,8 @@ env/
 
 # IDE
 .idea/
+
+# Project
+config.py
+lonerbot.sqlite
+yoyo.ini
