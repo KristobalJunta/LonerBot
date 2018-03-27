@@ -3,9 +3,10 @@
 
 from fuzzywuzzy import process
 import sqlite3
+from config import config
 
 
-conn = sqlite3.connect("lonerbot.sqlite")
+conn = sqlite3.connect(config.get('db'))
 cur = conn.cursor()
 
 cur.execute("SELECT * FROM voices;")
