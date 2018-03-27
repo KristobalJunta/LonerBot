@@ -20,4 +20,5 @@ env/
 # Project
 config.py
 lonerbot.sqlite
+lonerbot.sqlite.bak
 yoyo.ini
