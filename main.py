@@ -46,7 +46,13 @@ def handle_inline(query):
 
         i = 1
         for v in result_voices:
-            r = types.InlineQueryResultArticle(i, v[2], types.InputTextMessageContent(v[2]))
+            voice_url = "http://audio.kristobaljunta.me/lonernya/" + v[1]
+            print(voice_url)
+            r = types.InlineQueryResultVoice(
+                i,
+                voice_url,
+                v[2]
+            )
             response.append(r)
             i += 1
 
