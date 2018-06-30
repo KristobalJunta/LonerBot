@@ -18,7 +18,7 @@ texts = [v[2] for v in voices]
 i = 1
 default_voices = []
 for v in voices:
-    voice_url = "http://audio.kristobaljunta.me/lonernya/" + v[1]
+    voice_url = config.get('baseurl') + v[1]
     r = types.InlineQueryResultVoice(
         i,
         voice_url,
@@ -59,7 +59,7 @@ def handle_inline(query):
 
             i = 1
             for v in result_voices:
-                voice_url = "http://audio.kristobaljunta.me/lonernya/" + v[1]
+                voice_url = config.get('baseurl') + v[1]
                 r = types.InlineQueryResultVoice(
                     i,
                     voice_url,
