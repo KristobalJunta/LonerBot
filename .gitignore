@@ -20,3 +20,5 @@ env/
 # Project
 config.py
 yoyo.ini
+Pipfile.lock
+
